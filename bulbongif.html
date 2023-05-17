@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <h1>Javascript Ne yapar?</h1>
+    <p>JavaScript, HTML (attribute) öznitelik değerlerini değiştirebilir.</p>
+    <p>
+      Bu örnekte JavaScript, bir img'nin src (kaynak) özniteliğinin
+      değerini(attribute) değiştiriyor.
+    </p>
+
+    <button onclick="ac()">Ac</button>
+
+    <img id="myImage" src="./img/kapali.png" alt="" />
+    <button onclick="kapa()">Kapa</button>
+
+    <script>
+      function ac() {
+        document.getElementById("myImage").src = "./img/acik.png";
+        document.getElementById("body").style.backgroundColor = "black";
+      }
+
+      function kapa() {
+        document.getElementById("myImage").src = "./img/kapali.png";
+        document.getElementById("body").style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>
